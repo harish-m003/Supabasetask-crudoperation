@@ -52,7 +52,6 @@ function Auth() {
     }
 
   };
-  toast.success("Register Successfully. Lets Login !");
 
   return (
     <div className="login-page">
