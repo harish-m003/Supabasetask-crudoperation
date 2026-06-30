@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+}
+
+.crud-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crud-page h1 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 38px;
+}
+
+.form {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.form:hover {
+  transform: scale(1.02);
+}
+
+.form label {
+  display: block;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form input:focus,
+.form textarea:focus {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.02);
+}
+
+.form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #4f46e5;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background: #4f46e5;
+  color: white;
+  transform: scale(1.05);
+}
+
+.crud-read {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.crud-read ul {
+  list-style: none;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.crud-read ul:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.crud-read h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.crud-read p {
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.crud-read textarea {
+  width: 100%;
+  height: 90px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  margin-bottom: 15px;
+}
+
+.crud-read textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.crud-read button {
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.crud-read button:hover {
+  background: #4f46e5;
+  color: white;
+  transform: scale(1.08);
+}
+
+.crud-page > button {
+  margin-top: 35px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #ef4444;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.crud-page > button:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .crud-page {
+    padding: 20px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .crud-read {
+    grid-template-columns: 1fr;
+  }
+}
