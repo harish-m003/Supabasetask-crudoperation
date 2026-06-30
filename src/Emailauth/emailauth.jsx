@@ -4,7 +4,6 @@ import "../Crudoperations/crudoperations";
 import { useState } from "react";
 import { supabase } from "../Crudoperations/key";
 import { toast, ToastContainer } from 'react-toastify';
-import "react-toastify/dist/ReactToastify.css";
 
 
 function Auth() {
